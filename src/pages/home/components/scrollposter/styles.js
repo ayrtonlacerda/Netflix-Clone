@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   poster: {
     width: 100,
     height: 150,
-    margin: metrics.baseMargin,
+    margin: metrics.baseMargin / 2,
   }
 });
 

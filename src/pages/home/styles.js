@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
     width: 400,
     height: 250,
   },
+
+  indicator: {
+    marginTop: metrics.baseMargin * 2,
+  }
 });
 
 export default styles;

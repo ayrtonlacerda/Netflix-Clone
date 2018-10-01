@@ -7,6 +7,7 @@ export const Types = {
 const initialState = {
   data: [],
   erro: null,
+  content: false,
 };
 
 export default function theratedM(state = initialState, action) {
@@ -14,9 +15,9 @@ export default function theratedM(state = initialState, action) {
     case Types.GET_REQUEST:
       return state;
     case Types.GET_SUCCESS:
-      return { ...state, data: action.payload.data, erro: null };
+      return { ...state, data: action.payload.data, erro: null, content: true };
     case Types.GET_FAILURE:
-      return { ...state, erro: action.payload.erro };
+      return { ...state, erro: action.payload.erro, content: false };
     default:
       return state;
   }
